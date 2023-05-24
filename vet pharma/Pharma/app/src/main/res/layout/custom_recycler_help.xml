@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#6A969393">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutHelp"
+        android:layout_width="387dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="5dp"
+        android:background="#FFFFFF"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/custNametextViewCustomHelp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="Cust Name :"
+            android:textColor="#000"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/custContacttextViewCustomHelp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="5dp"
+            android:text="Cust Contact"
+            android:textColor="#000"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ctextViewCustomHelp"
+            app:layout_constraintTop_toBottomOf="@+id/custEmailtextViewCustomHelp" />
+
+        <TextView
+            android:id="@+id/ctextViewCustomHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="3dp"
+            android:paddingStart="17dp"
+            android:text="Contact :"
+            android:textColor="#B3000000"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/custContacttextViewCustomHelp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etextViewCustomHelp" />
+
+        <TextView
+            android:id="@+id/custEmailtextViewCustomHelp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="5dp"
+            android:text="Cust Email"
+            android:textColor="#000"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ctextViewCustomHelp"
+            app:layout_constraintTop_toBottomOf="@+id/custNametextViewCustomHelp" />
+
+        <TextView
+            android:id="@+id/ftextViewCustomHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="3dp"
+            android:paddingStart="5dp"
+            android:text="Feedback :"
+            android:textColor="#B3000000"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/custFeedbacktextViewCustomHelp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ctextViewCustomHelp" />
+
+        <TextView
+            android:id="@+id/etextViewCustomHelp"
+            android:layout_width="67dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="22dp"
+            android:text="Email :"
+            android:textColor="#B3000000"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/custEmailtextViewCustomHelp"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/custNametextViewCustomHelp" />
+
+        <TextView
+            android:id="@+id/custFeedbacktextViewCustomHelp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="5dp"
+            android:text="Cust Feedback"
+            android:textColor="#000"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ftextViewCustomHelp"
+            app:layout_constraintTop_toBottomOf="@+id/custContacttextViewCustomHelp" />
+
+        <TextView
+            android:id="@+id/currentDatetextViewCustomHelp"
+            android:layout_width="104dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="4dp"
+            android:text="currentDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.982"
+            app:layout_constraintStart_toStartOf="@+id/custNametextViewCustomHelp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

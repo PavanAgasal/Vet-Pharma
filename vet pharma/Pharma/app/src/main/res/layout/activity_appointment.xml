@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppointmentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D70D47A1"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Appointment"
+        app:titleMarginStart="30dp" />
+
+    <TextView
+        android:id="@+id/nametextViewAppointment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="5dp"
+        android:text="Name:"
+        android:textColor="#000"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAppointment"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <Button
+        android:id="@+id/confirmAppointmentbuttonAppointment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/bg_login"
+        android:text="Confirm Appointment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nametextViewAppointment"
+        app:layout_constraintVertical_bias="0.974" />
+
+    <EditText
+        android:id="@+id/animalTypeeditTextAppointment"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="eg. Dog"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textColor="#D8000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nametextViewAppointment" />
+
+    <EditText
+        android:id="@+id/animalAgeeditTextAppointment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Enter Animal Age"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textColor="#DA000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animalTypeeditTextAppointment" />
+
+    <EditText
+        android:id="@+id/ownerNameeditTextAppointment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Enter Your Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textColor="#DA000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nametextViewAppointment" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="5dp"
+        android:text="Enter Animal Type"
+        android:textColor="#E6000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nametextViewAppointment" />
+
+    <TextView
+        android:id="@+id/datetextViewAppointment"
+        android:layout_width="370dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Select Date Of Appontment"
+        android:paddingLeft="8dp"
+        android:paddingTop="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animalAgeeditTextAppointment" />
+
+    <TextView
+        android:id="@+id/textViewAppointment"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="10dp"
+        android:text="Select Session :"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animalAgeeditTextAppointment" />
+
+    <RadioGroup
+        android:id="@+id/sessionRadioGroupAppointment"
+        android:layout_width="111dp"
+        android:layout_height="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sessiontextViewAppointment">
+
+        <RadioButton
+            android:id="@+id/morningradioButtonAppointment"
+            android:layout_width="109dp"
+            android:layout_height="57dp"
+            android:text="Morning"
+            android:textColor="#000000"
+            android:onClick="checkButton"/>
+
+        <RadioButton
+            android:id="@+id/afternoonradioButtonAppointment"
+            android:layout_width="109dp"
+            android:layout_height="57dp"
+            android:text="Afternoon"
+            android:textColor="#000000"
+            android:onClick="checkButton"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/sessiontextViewAppointment"
+        android:layout_width="146dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="96dp"
+        android:paddingTop="10dp"
+        android:textColor="#97333232"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toEndOf="@+id/textViewAppointment"
+        app:layout_constraintTop_toBottomOf="@+id/animalAgeeditTextAppointment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
